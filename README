@@ -1,0 +1,10 @@
+This utility generates a small digest of an e-mail box -- used for
+infrequently used e-mail boxes that don't have forwarding capability.
+
+To test IMAP via the command line:
+install telnet-ssl
+telnet -z ssl imap.whatever.com 993
+0001 LOGIN userid password
+0002 SELECT INBOX
+0003 SEARCH SINCE 27-Dec-2008
+
