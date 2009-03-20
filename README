@@ -8,3 +8,5 @@ telnet -z ssl imap.whatever.com 993
 0002 SELECT INBOX
 0003 SEARCH SINCE 27-Dec-2008
 
+Also included in a Haskell version of same, using MissingPy and Python
+for the IMAP functionality.
