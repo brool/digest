@@ -28,6 +28,9 @@ imap_userid = args[3]
 imap_password = args[4]
 imap_days = int(opt.get("--days", 1))
 
+if (imap_password[0] == '@'):
+    imap_password = file(imap_password[1:], 'rt').read().strip()
+
 since = datetime.datetime.today() - datetime.timedelta(days=imap_days)
 since = since.strftime("%d-%b-%Y")
 
